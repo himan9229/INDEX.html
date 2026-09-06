@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Point Cyber Cafe</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#061225;color:white;line-height:1.6}
+header{min-height:650px;padding:30px 7%;display:flex;align-items:center;position:relative;background:linear-gradient(135deg,rgba(2,15,38,.95),rgba(7,45,85,.82)),url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=85");background-size:cover;background-position:center}
+nav{position:absolute;top:0;left:0;right:0;padding:20px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:23px;font-weight:bold}.logo span,.title span{color:#21d4fd}.nav-tag{border:1px solid #21d4fd;padding:8px 16px;border-radius:30px}
+.hero{max-width:800px}.badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}.badges span{background:rgba(33,212,253,.12);border:1px solid rgba(33,212,253,.4);padding:7px 13px;border-radius:20px;font-size:13px}
+.hero h1{font-size:clamp(45px,7vw,80px);line-height:1;margin-bottom:20px}.hero h1 span{color:#21d4fd}.hero p{color:#c8d7e8;font-size:20px}
+.whatsapp-btn{display:inline-block;margin-top:30px;background:#16c784;color:#fff;padding:15px 25px;border-radius:12px;font-weight:bold;cursor:pointer}
+section{padding:70px 7%}.title{text-align:center;font-size:36px;margin-bottom:35px}
+.services,.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+.card{background:#0d1d35;border:1px solid #1b385a;padding:25px;border-radius:18px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#21d4fd}.card .icon{font-size:32px;margin-bottom:10px}.card p{color:#aebfd2;font-size:14px}
+.pricing{background:#09182d}.price{background:#0d203b;border:1px solid #23415f;padding:22px;border-radius:16px}.price b{display:block;color:#21d4fd;font-size:25px;margin-top:5px}
+.form-box{max-width:850px;margin:auto;background:#0d1d35;border:1px solid #1d3b60;padding:30px;border-radius:22px}
+input,select,textarea{width:100%;padding:14px;margin:8px 0 15px;border-radius:10px;border:1px solid #2a4667;background:#071225;color:white;outline:none}
+button{width:100%;padding:15px;border:none;border-radius:10px;background:#16c784;color:white;font-size:16px;font-weight:bold;cursor:pointer}
+.location{text-align:center;background:linear-gradient(#071225,#0b1d35)}.map-logo{width:90px;height:90px;margin:0 auto 20px;background:white;color:#111;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:48px}.location p{color:#bdcad8}
+.stats{margin-top:35px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:15px}.stat{background:#0d1d35;padding:20px;border-radius:15px}.stat strong{display:block;color:#21d4fd;font-size:28px}
+footer{text-align:center;padding:30px;color:#91a5ba;border-top:1px solid #18304d}
+.float-wa{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#16c784;display:flex;align-items:center;justify-content:center;font-size:28px;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.4)}
+@media(max-width:600px){nav{padding:16px 5%}.nav-tag{display:none}header{padding:25px 5%;min-height:600px}section{padding:55px 5%}.hero h1{font-size:48px}}
+</style>
+</head>
+<body>
+<header>
+<nav><div class="logo">DIGITAL <span>POINT</span> CYBER CAFE</div><div class="nav-tag">Premium Digital Services</div></nav>
+<div class="hero">
+<div class="badges"><span>⚡ Fast Service</span><span>🔒 Trust & Security</span><span>💬 Customer Support</span><span>₹ Affordable Price</span></div>
+<h1>Digital Point<br><span>Cyber Cafe</span></h1>
+<p>One Stop Solution For All Your Digital Needs</p>
+<div class="whatsapp-btn" onclick="generalWhatsApp()">💬 WhatsApp Service Request</div>
+</div>
+</header>
+<section><h2 class="title">Main <span>Services</span></h2><div class="services">
+<div class="card"><div class="icon">💻</div><h3>Online Services</h3><p>All types of online digital services and assistance.</p></div>
+<div class="card"><div class="icon">📝</div><h3>Form Filling</h3><p>Government, job and examination forms.</p></div>
+<div class="card"><div class="icon">🖨️</div><h3>Printing</h3><p>B/W, colour and PDF printing.</p></div>
+<div class="card"><div class="icon">📸</div><h3>Photo Services</h3><p>Passport photo, resize and photo editing.</p></div>
+<div class="card"><div class="icon">📄</div><h3>Scanning</h3><p>Document scanning and PDF services.</p></div>
+<div class="card"><div class="icon">🏛️</div><h3>RTPS Assistance</h3><p>Caste, income, residence and other services.</p></div>
+<div class="card"><div class="icon">🎓</div><h3>Scholarship</h3><p>Scholarship application assistance.</p></div>
+<div class="card"><div class="icon">👨‍💼</div><h3>Job Forms</h3><p>Recruitment and examination form assistance.</p></div>
+<div class="card"><div class="icon">🏫</div><h3>Admission</h3><p>College and admission-related online services.</p></div>
+<div class="card"><div class="icon">🪪</div><h3>Document Services</h3><p>Digital document preparation and assistance.</p></div>
+</div></section>
+<section class="pricing"><h2 class="title">Popular <span>Prices</span></h2><div class="prices">
+<div class="price">B/W Print<b>₹3 / Page</b></div><div class="price">Colour Print<b>₹10 / Page</b></div><div class="price">PDF Print<b>₹10</b></div><div class="price">Passport Photo – 6 pcs<b>₹25</b></div><div class="price">Passport Photo – 12 pcs<b>₹40</b></div>
+</div></section>
+<section><h2 class="title">WhatsApp <span>Service Request</span></h2><div class="form-box"><form onsubmit="sendRequest(event)">
+<label>Your Name</label><input type="text" id="name" placeholder="Enter your name" required>
+<label>Mobile Number</label><input type="tel" id="mobile" placeholder="Enter mobile number" required>
+<label>Select Service</label><select id="service" required><option value="">Select Service</option><option>Online Service</option><option>Form Filling</option><option>Printing</option><option>Photo Service</option><option>Scanning</option><option>RTPS Assistance</option><option>Scholarship</option><option>Job Form</option><option>Admission</option><option>Document Service</option><option>Other</option></select>
+<label>Your Requirement</label><textarea id="requirement" rows="4" placeholder="Write your requirement" required></textarea>
+<button type="submit">💬 Send Request on WhatsApp</button>
+</form></div></section>
+<section class="location"><h2 class="title">Our <span>Location</span></h2><div class="map-logo">📍</div><h3>Digital Point Cyber Cafe</h3><p>Viscoman Bhavan, Ambika Durga Colony</p><p>🗺️ Google Maps</p>
+<div class="stats"><div class="stat"><strong>Fast</strong>Service</div><div class="stat"><strong>100%</strong>Support</div><div class="stat"><strong>10+</strong>Services</div><div class="stat"><strong>₹</strong>Affordable</div></div></section>
+<footer>© 2026 Digital Point Cyber Cafe<br>All Rights Reserved</footer>
+<div class="float-wa" onclick="generalWhatsApp()">💬</div>
+<script>
+const WHATSAPP_NUMBER="919229767096";
+function generalWhatsApp(){const message=`*DIGITAL POINT CYBER CAFE - SERVICE REQUEST*
+
+Hello Digital Point Cyber Cafe,
+
+I want to request an online service.
+
+Please contact me regarding my requirement.`;window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message),"_blank")}
+function sendRequest(event){event.preventDefault();const name=document.getElementById("name").value;const mobile=document.getElementById("mobile").value;const service=document.getElementById("service").value;const requirement=document.getElementById("requirement").value;const message=`*DIGITAL POINT CYBER CAFE - SERVICE REQUEST*
+
+*Name:* ${name}
+
+*Mobile:* ${mobile}
+
+*Service:* ${service}
+
+*Requirement:* ${requirement}
+
+Please contact me regarding this request.`;window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message),"_blank")}
+</script>
+</body>
+</html>
